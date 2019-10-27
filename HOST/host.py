@@ -6,6 +6,7 @@ auth_token = '1abf3c0296584cc5f7114359313f048f'
 client = Client(account_sid, auth_token)
 def call():
     call = client.calls.create(
+                            method='GET',
                             url='http://vps736330.ovh.net:8000/resp.xml',
                             to='+447342178041',
                             from_='+447723569692'
