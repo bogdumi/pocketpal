@@ -1,6 +1,7 @@
 # Download the helper library from https://www.twilio.com/docs/python/install
 from twilio.rest import Client
 import serial
+import time
 account_sid = 'ACf627d2336806adfa6b0475e9739babaf'
 auth_token = '1abf3c0296584cc5f7114359313f048f'
 client = Client(account_sid, auth_token)
@@ -29,3 +30,4 @@ while True:
         if 'help' in str(line):
             print("HELP!")
             call()
+            time.sleep(10)
