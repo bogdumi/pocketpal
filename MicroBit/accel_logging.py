@@ -1,7 +1,6 @@
 # Add your Python code here. E.g.
 from microbit import *
 import math
-import speech
 while True:
     
     x=accelerometer.get_x()
