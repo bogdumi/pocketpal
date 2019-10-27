@@ -21,9 +21,10 @@ def call():
                     )
 
     print(message.sid)
-
-with serial.Serial('/dev/ttyACM0',115200,timeout=1) as ser:
-    line=ser.readline()
-
-    if line=="help":
-        call()
+while True:
+    with serial.Serial('/dev/ttyACM0',115200,timeout=1) as ser:
+        line=ser.readline()
+        print(line)
+        if 'help' in str(line):
+            print("HELP!")
+            call()
