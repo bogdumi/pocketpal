@@ -9,3 +9,7 @@ PocketPal is a microcontroller application that detects falling over using a Mic
 - Flash the MicroBit by dropping the ```accel_logging.py``` file on the microcontroller itself.
 
 - Start the Python3 application by running ```python3 host.py``` in the terminal where the file is located.
+
+## Additional
+
+University of Bristol CSS envoy submission to Hack the Midlands 4.0 in Birmingham, October 2019
